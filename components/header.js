@@ -1,6 +1,9 @@
-import React from "react";
+import { React, useState } from "react";
+import HeaderMobile from "./headerMobile";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <nav className="overflow-hidden fixed z-50">
@@ -16,6 +19,7 @@ const Header = () => {
           <div className="flex mr-auto gap-6">
             <div>
               <svg
+                onClick={() => setIsOpen(!isOpen)}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -85,6 +89,7 @@ const Header = () => {
             </div>
           </div>
         </section>
+        {isOpen && <HeaderMobile setIsOpen={setIsOpen} />}
       </nav>
     </>
   );
