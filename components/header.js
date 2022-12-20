@@ -51,8 +51,8 @@ const Header = () => {
               </svg>
             </div>
           </div>
-          <div className="text-center text-xl font-extrabold tracking-widest">
-            COTN
+          <div className="text-center text-xl uppercase font-extrabold tracking-widest">
+            blank
           </div>
           <div className="flex ml-auto gap-6">
             <div>

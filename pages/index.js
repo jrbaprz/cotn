@@ -55,7 +55,7 @@ const index = () => {
 
       <section>
         <span className="flex justify-center items-center text-5xl underline p-4">
-          Instagram@cotn
+          Instagram@blank
         </span>
         <div className="relative grid grid-cols-2 p-4 gap-4 md:grid-cols-4">
           <div>
