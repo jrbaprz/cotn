@@ -48,13 +48,16 @@ const index = () => {
         </div>
       </section>
 
+      <div className="flex justify-center items-center p-8 text-xl">
+        New Arrivals
+      </div>
       <Carousel />
 
       <section>
         <span className="flex justify-center items-center text-5xl underline p-4">
           Instagram@cotn
         </span>
-        <div className="relative grid grid-cols-2 p-4">
+        <div className="relative grid grid-cols-2 p-4 gap-4 md:grid-cols-4">
           <div>
             <Image src={Hero} alt="Photo of clothes" width={200} />
           </div>

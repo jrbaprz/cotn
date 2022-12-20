@@ -1,9 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const HeaderMobile = () => {
   return (
     <>
-      <section className="h-screen bg-white mt-4 p-4 flex flex-col gap-4">
+      <motion.section
+        className="h-screen bg-white mt-4 p-4 flex flex-col gap-4"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{
+          duration: 0.15,
+        }}
+      >
         <div className="uppercase text-xs">Menu</div>
         <ul className="flex flex-col gap-4 text-lg">
           <div className="flex w-full">
@@ -75,7 +83,7 @@ const HeaderMobile = () => {
             </svg>
           </div>
         </ul>
-      </section>
+      </motion.section>
     </>
   );
 };
