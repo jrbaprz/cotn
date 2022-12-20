@@ -3,11 +3,11 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <nav className="fixed z-50">
+      <nav className="overflow-hidden fixed z-50">
         <section>
           <div className="w-screen bg-gray-200 p-1">
-            <span className="text-xs flex justify-center items-center">
-              Get your order in by 12/25! See shipping guide for more details.
+            <span className="text-xs flex justify-center items-center tracking-tight">
+              Free shipping over $100! See shipping guide for more details
             </span>
           </div>
         </section>

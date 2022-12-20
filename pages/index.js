@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Hero from "../assets/images/hero.jpg";
+import Carousel from "../components/carousel";
 
 const index = () => {
   return (
@@ -40,10 +41,32 @@ const index = () => {
           <h1 className="tracking-wide">Menswear</h1>
         </div>
         <div className="container mx-auto flex flex-col items-center text-center border-black border-[1px] p-4">
-          <h1 className="tracking-wide">Menswear</h1>
+          <h1 className="tracking-wide">Womenswear</h1>
         </div>
         <div className="container mx-auto flex flex-col items-center text-center border-black border-[1px] p-4">
-          <h1 className="tracking-wide">Menswear</h1>
+          <h1 className="tracking-wide">Accessories</h1>
+        </div>
+      </section>
+
+      <Carousel />
+
+      <section>
+        <span className="flex justify-center items-center text-5xl underline p-4">
+          Instagram@cotn
+        </span>
+        <div className="relative grid grid-cols-2 p-4">
+          <div>
+            <Image src={Hero} alt="Photo of clothes" width={200} />
+          </div>
+          <div>
+            <Image src={Hero} alt="Photo of clothes" width={200} />
+          </div>
+          <div>
+            <Image src={Hero} alt="Photo of clothes" width={200} />
+          </div>
+          <div>
+            <Image src={Hero} alt="Photo of clothes" width={200} />
+          </div>
         </div>
       </section>
     </>
