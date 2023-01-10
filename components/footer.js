@@ -4,15 +4,15 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-[#eae9e5] px-5 py-16">
-        <div className="text-center text-xl">
+        <div className="text-center text-xl xl:text-3xl xl:w-[52rem] xl:mx-auto">
           Fusce tincidunt laoreet lorem, vitae tempor metus ultrices non. Morbi
           eget elit scelerisque, maximus augue vitae, porta.
         </div>
-        <div className="text-center text-xs font-light pt-8">
+        <div className="text-center text-xs font-light pt-8 xl:text-xl">
           Nam $10 mauris enim. Aliquam ultricies, eros a faucibus varius, massa
           odio.
         </div>
-        <form className="pt-8 border-b-black border-[1px] flex">
+        <form className="pt-8 border-b-black border-[1px] flex mx-auto md:w-96">
           <input
             className="appearance-none bg-transparent border-none w-full mr-3 py-1 px-2 focus:outline-none placeholder:text-sm"
             type="text"

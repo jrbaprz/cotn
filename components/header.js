@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className="overflow-hidden fixed z-50">
+      <nav className="overflow-visible fixed z-50 w-screen scrollbar-hide">
         <section>
           <div className="w-screen bg-gray-200 p-1">
             <span className="text-xs flex justify-center items-center tracking-tight">
@@ -16,7 +16,7 @@ const Header = () => {
         </section>
 
         <section className="bg-white grid grid-cols-3 justify-center items-center w-screen p-3">
-          <div className="flex mr-auto gap-6">
+          <div className="flex mr-auto gap-6 md:hidden">
             <div>
               <svg
                 onClick={() => setIsOpen(!isOpen)}
@@ -51,10 +51,15 @@ const Header = () => {
               </svg>
             </div>
           </div>
+          <ul className="hidden md:flex gap-4 text-sm">
+            <li>Men</li>
+            <li>Women</li>
+            <li>Accessories</li>
+          </ul>
           <div className="text-center text-xl uppercase font-extrabold tracking-widest">
             blank
           </div>
-          <div className="flex ml-auto gap-6">
+          <div className="flex ml-auto gap-6 md:hidden">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,6 +93,11 @@ const Header = () => {
               </svg>
             </div>
           </div>
+          <ul className="hidden md:flex gap-4 text-sm ml-auto">
+            <li>Search</li>
+            <li>Help</li>
+            <li>Bag</li>
+          </ul>
         </section>
         {isOpen && <HeaderMobile setIsOpen={setIsOpen} />}
       </nav>
